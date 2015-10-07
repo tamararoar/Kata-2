@@ -15,9 +15,10 @@ public class JavaApplication2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int [] v = {1,1,4,6,8,8,2,};
-       Histogram histo = new Histogram(v);
-       HashMap <Integer,Integer> histogram = histo.getHisto(); 
+        Integer [] v = {1,1,4,6,8,8,2};
+        String [] v1 = {"Ana","Juan","Pedro","Lucía"};
+       Histogram <Integer> histogram = CalculaHistogram.computeHisto(v); 
+       
         
        for(Integer Key : histogram.keySet()){
            System.out.println(Key+":" + histogram.get(Key));
