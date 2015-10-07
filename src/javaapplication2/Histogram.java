@@ -10,19 +10,19 @@ import java.util.HashMap;
  *
  * @author usuario
  */
-public class Histogram {
-    private final int[] elVector;
+public class Histogram <T>{
+    private final T[] elVector;
     
-    public Histogram(int[] elVector) {
+    public Histogram(T[] elVector) {
         this.elVector = elVector;
     }
 
-    public int[] getElVector() {
+    public T[] getElVector() {
         return elVector;
     }
-    public HashMap <Integer,Integer> getHisto(){
+    public HashMap getHisto(){
        
-        HashMap <Integer,Integer> histo = new HashMap<>();
+        HashMap <T,Integer> histo = new HashMap<>();
         for (int i = 0; i < elVector.length; i++) {
             if(histo.containsKey(elVector[i])){
                 histo.put(elVector[i],0);
