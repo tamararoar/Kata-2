@@ -20,7 +20,7 @@ public class JavaApplication2 {
        HashMap <Integer,Integer> histogram = histo.getHisto(); 
         
        for(Integer Key : histogram.keySet()){
-           System.out.println(Key+":" + histogram.get(key));
+           System.out.println(Key+":" + histogram.get(Key));
        }
         }
     }
