@@ -17,8 +17,11 @@ public class JavaApplication2 {
     public static void main(String[] args) {
         int [] v = {1,1,4,6,8,8,2,};
        Histogram histo = new Histogram(v);
-       HashMap <Integer,Integer> histogram = new HashMap<>(); 
+       HashMap <Integer,Integer> histogram = histo.getHisto(); 
         
+       for(Integer Key : histogram.keySet()){
+           System.out.println(Key+":" + histogram.get(key));
+       }
         }
     }
 
